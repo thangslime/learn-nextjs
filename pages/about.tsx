@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { PureComponent } from 'react'
 
 export interface AboutPageProps {}
@@ -9,5 +10,12 @@ export default function AboutPage(props: AboutPageProps) {
         b: 0,
         a: 0.3
     }
-    return <div style = {{backgroundColor: `rgba(${css.r},${css.g},${css.b},${css.a})` }}>Hello</div>
+    return (
+        <>
+            <div style = {{backgroundColor: `rgba(${css.r},${css.g},${css.b},${css.a})` }}>Hello</div>
+            <Link href={'/'}> 
+                <a>GO Home</a>
+            </Link>
+        </>
+    )
 }

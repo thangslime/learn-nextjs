@@ -24,6 +24,9 @@ const Home: NextPage = () => {
         <Link href={'/user'}> 
           <a>GO TO User</a>
         </Link>
+        <Link href={'/intro'}> 
+          <a>GO TO Intro page</a>
+        </Link>
 
         <p className={styles.description}>
           Get started by editing{' '}
